@@ -11,4 +11,18 @@ const getAnswerList = async (req, res) => {
     }
 };
 
-module.exports = { getAnswerList };
+const addAnswer = async (req, res) => {
+    try {
+        const { questionIdx } = req.params;
+        const { content } = req.body;
+        const { dataValues } = await ANSWER.add({ questionIdx, content });
+        if (dataValues) {
+            res.sendStatus(201);
+        }
+    } catch (e) {
+        console.log(e);
+        res.sendStatus(400);
+    }
+};
+
+module.exports = { getAnswerList, addAnswer };

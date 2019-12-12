@@ -26,5 +26,9 @@ module.exports = (sequelize, Sequelize) => {
         });
     };
 
+    ANSWER.add = ({ questionIdx, content }) => {
+        return ANSWER.create({ questionIdx, content });
+    };
+
     return ANSWER;
 };
