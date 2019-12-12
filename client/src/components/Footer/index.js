@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as Styled from './style';
 import axios from 'axios';
 
@@ -32,6 +32,10 @@ function Footer({ hashcode, setPhoto }) {
         const photoboothTitle = randomItem(photobooth);
         getImageUrl(hashcode, photoboothTitle);
     };
+
+    useEffect(() => {
+        handleSubmit();
+    }, []) ;
 
     return (
         <Styled.Footer>
