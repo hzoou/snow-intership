@@ -39,7 +39,7 @@ function Footer({ hashcode, setPhoto }) {
 
     return (
         <Styled.Footer>
-            <Styled.Item onClick={handleSubmit}>캐릭터</Styled.Item>
+            <Styled.Item onClick={handleSubmit}>캐릭터 변경</Styled.Item>
         </Styled.Footer>
     )
 }

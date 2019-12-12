@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const Container = styled.main`
-    width: fit-content;
-    margin: 0 auto;
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    text-align: left;
 `;
 
 const Section = styled.section`

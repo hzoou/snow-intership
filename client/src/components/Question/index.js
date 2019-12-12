@@ -40,12 +40,12 @@ function Question({ username, code, photo }) {
 
     return (
         <Styled.Container>
-            <div>{username}님! 질문을 등록해보세요!</div>
+            <Styled.Description>{username}님! 질문을 등록해보세요!</Styled.Description>
             {photo ? <img src={photo} /> : ''}
             <section>
-                <input placeholder="질문을 입력해주세요" ref={question} />
+                <Styled.Input ref={question} />
             </section>
-            <button onClick={handleSubmit}>질문 등록</button>
+            <Styled.Submit onClick={handleSubmit}>질문 등록</Styled.Submit>
         </Styled.Container>
     )
 }

@@ -5,8 +5,11 @@ const Footer = styled.footer`
     justify-content: center;
 `;
 
-const Item = styled.div`
-    padding: 1rem;
+const Item = styled.button`
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: gray;
+    cursor: pointer;
 `;
 
 export { Footer, Item };
