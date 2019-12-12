@@ -43,7 +43,7 @@ function QuestionPage() {
 
     return (
         <Styled.Container>
-            <Ask props={question}/>
+            <Ask content={question.content} photo={question.photo} id={question.id} />
             {answers.map(({ content }, index) => {
                 return (
                     <Answer
